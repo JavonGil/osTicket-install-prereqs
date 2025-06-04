@@ -19,7 +19,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - MySQL
 - osTicket
 
-<h2>👨‍💻 Operating Systems Used </h2>
+<h2>🖥️ Operating Systems Used </h2>
 
 - macOS Sequoia
 - Windows 10</b> (21H2)
@@ -57,7 +57,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>- Right-click the folder and select Extract All...</p>
 <p>- Confirm the correct destination (Desktop) and click Extract. The folder should be called "osTicket-Installation-Files"</p>
 <p>- Once the folder is finished extracting, you may have to minimize a window to see it. It should appear by the Browser icon on the Desktop.</p>
-<p>- We will use the files in this folder to install osTicket. I moved the install folder to the top right of my screen (for easy locate) and moved the zip file to a bottom corner to ignore for the rest of the lab. This was to prevent mixing them up because its about to get saucy. 😏 (You can move the zip file to the recycle bin. I didn't realize that til later in the lab.)</p>
+<p>- We will use the files in this folder to install osTicket. I moved the install folder to the top right of my screen (for easy locate) and moved the zip file to a bottom corner to ignore for the rest of the lab.(You can move the zip file to the recycle bin.)</p>
 <br/>
 
 <table>
@@ -184,7 +184,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <img width="600" alt="OT22" src="https://github.com/user-attachments/assets/ee7d67a1-c2d8-4be9-af92-45a13a4f972c" />
 
-<p>- Okay, we've done a lot of jumping from folder to folder and changing windows to this point. Stand up, stretch, get something to drink, and maybe a snack so we can get locked in. This next step is beyond SUPER IMPORTANT! Absolutely DO NOT MESS THIS UP! (No Pressure) 😏</p>
+<p>- This next step is beyond SUPER IMPORTANT! Absolutely DO NOT MESS THIS UP!</p>
 <p>- ⚠️ Just type the word ROOT in both boxes. Yes, ROOT in all caps. ⚠️ </p>
 <p>- Later on, the username will be root but the password is ROOT. This would be really bad in the real world but we're keeping simple for this project. A ton of people struggled with this part in the lab. The huge issue is we won't know its wrong until the end when osTicket fails to launch. </p>
 <p>- Click Next, Execute on the next screen, and then Finish.</p>
@@ -200,7 +200,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     </td>
   </tr>
 </table>
-<p>- Now that the scary part is over, we are going to Register PHP from within IIS. Open IIS as an Admin from the Start Menu.</p>
+<p>- We are going to Register PHP from within IIS. Open IIS as an Admin from the Start Menu.</p>
 <p>- In IIS, open PHP Manager by double-clicking the icon.</p>
 <p>- Click "Register new PHP version", then click the three dots, and browse to the C drive. Windows(C:). </p>
 <br/>
@@ -244,7 +244,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     </td>
   </tr>
 </table>
-<p>- Now run back to the osTicket Installation Files folder on the Desktop.🏃‍♂️‍➡️ We need to unzip (osTicket-v1.15.8.zip).</p>
+<p>- Now run back to the osTicket Installation Files folder on the Desktop. We need to unzip (osTicket-v1.15.8.zip).</p>
 <p>- Right-click osTicket-v1.15.8.zip and select Extract... </p>
 <p>- Go ahead and extract the files into the osTicket-Installation-Files folder. You'll notice the new folder at the top. See Figure 28</p>
 <br/>
@@ -306,7 +306,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>- In IIS on the left side of the screen, under Connections, go in this order:</p> 
  <p> osTicket-vm -> Sites -> Default Web Site -> osticket. (See Figure 35) /p>
 <p>- Then on the left side, under Browse Folder, click Browse *:80 (http).</p>
-<p>- Well looky there! We did it! Trust me when I say this is a GREAT sign. This means that we've done evrything correct up to this point.🎉 </p>
+<p>- This is a GREAT sign. This means that we've done evrything correct up to this point.🎉 </p>
 <p>- Alright, settle down because there's still work to be done. We need to grab some missing extensions before we can party. See Figure 36</p>
 <br/>
 
@@ -349,7 +349,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   </tr>
 </table>
 <p>- Last but not least, scroll through and locate "php_opcache.dll". Select and Enable. </p>
-<p>- Now, you can simply refresh the browser and observe the new draft picks to the extension team. Fly Eagles Fly! 🦅 🏆 </p>
+<p>- Now, you can simply refresh the browser and observe</p>
 <br/>
 
 <table>
@@ -377,7 +377,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     </td>
   </tr>
 </table>
-<p>- ⚠️ Rename "ost-sampleconfig.php" to "ost-config.php". ⚠️ Name it exactly like you see in Figure 45. This is another IMPORTANT step in our success later and everybody wants the Pizza Party! Andolini's Pizzeria is straight 🔥 if you're ever in Oklahoma! 😁  </p>
+<p>- ⚠️ Rename "ost-sampleconfig.php" to "ost-config.php". ⚠️ Name it exactly like you see in Figure 45.  </p>
 <p>- Now that we got the config file renamed correctly, right-click "ost-config.php" and click Properties.</p>
 <br/>
 
@@ -485,7 +485,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   </tr>
 </table>
 <p>- Right-click the dolphin Unamed, select Create new, and click Database.</p>
-<p>- ⚠️ Name the database "osTicket".⚠️ This is another IMPORTANT step towards our success. Click OK. See Figure 60</p>
+<p>- ⚠️ Name the database "osTicket".⚠️ This is another IMPORTANT step. Click OK. See Figure 60</p>
 <br/>
 
 <table>
@@ -513,7 +513,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>✅ Conclusion</h2>
 
-<p>This concludes our project. We successfully installed osTicket on our Windows virtual machine! Most companies use some form of a ticketing system in their every day operations. This project gave me the opportunity to experince a sample of what all is required to simply load a web page you might use at work. We'll dive into osTicket and do some post-install configurations in the next project. Don't forget to Stop (turn off) the VMs in Azure. As always, Thank You for your time and viewing this Project. We'll see you on the next one! 😎      
+<p>That wraps up our project. We successfully installed osTicket on our Windows virtual machine. Most companies rely on ticketing systems in their daily operations, and this gave us a hands-on look at what's involved just to get one up and running.
+It’s wild how much goes into something as simple as loading a web page you might use at work. In the next project, we’ll dive deeper into osTicket and handle some post-install setup.
+Make sure to stop your VMs in Azure when you're done. Thanks for tapping in and checking out the project. See you on the next one 😎     
 </p>
 <br/>
 
