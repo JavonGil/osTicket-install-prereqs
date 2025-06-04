@@ -50,7 +50,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
       <img width="1000" alt="OT4" src="https://github.com/user-attachments/assets/146f985b-d0b3-481f-aff2-eb1d85845cdb" />
     </td>
     <td>
-      <img width="1000" alt=<"OT5" src="https://github.com/user-attachments/assets/8315b55b-6b12-4cb3-8c18-25d014fc821d" />
+      <img width="675" alt="Screenshot 2025-06-04 at 4 53 50 PM" src="https://github.com/user-attachments/assets/38e7439d-af7b-46ed-b8b6-2a5c4fcb189f" />
     </td>
   </tr>
 </table>
